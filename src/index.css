@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'tailwindcss';
+
+@theme{
+    /* Primary Colors */
+    --color-purple: hsl(238, 40%, 52%);
+    --color-pink: hsl(358, 79%, 66%);
+    --color-purple-light: hsl(239, 57%, 85%);
+    --color-pink-light: hsl(357, 100%, 86%);
+    /* Neutral Colors */
+    --color-grey-dark: hsl(212, 24%, 26%);
+    --color-grey-light: hsl(211, 10%, 45%);
+    --color-grey-lighter: hsl(223, 19%, 93%);
+    --color-grey-lightest: hsl(228, 33%, 97%);
+    --color-white: hsl(0, 100%, 100%);
+    /* Font Family */
+    --font-rubik: 'Rubik', sans-serif;
+    /* Font Weights */
+    --font-weight-light: 400;
+    --font-weight-normal: 500;
+    --font-weight-bold: 700;
+}
+@layer base {
+    body {
+        @apply bg-grey-lighter font-rubik text-grey-dark;
+    }
+}
